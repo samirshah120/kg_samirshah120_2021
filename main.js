@@ -1,4 +1,6 @@
 function mappingExists(s1,s2){
+    s1 = s1.trim().toLowerCase()
+    s2 = s2.trim().toLowerCase()
     if(typeof s1 !== "string" || typeof s2 !== "string") //Only strings are allowed
         return false
     if(s1.length !== s2.length) //both strings should be of same length
